@@ -1,0 +1,9 @@
+﻿body {
+	background-image: url('Images/bloodbackg.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+#Navigation{
+	background-color:red;
+}
