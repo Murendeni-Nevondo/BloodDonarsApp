@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BloodTrace.Pages.SignUpPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Image Source="bloodlogo.png" Margin="0,40,0,0" Grid.Row="0" HeightRequest="200" WidthRequest="200"/>
+
+            <StackLayout Grid.Row="1" Margin="40,20,40,0">
+                <Entry Placeholder="Email" PlaceholderColor="#707070" x:Name="EntEmail"/>
+                <Entry Placeholder="Password" x:Name="EntPassword" IsPassword="True" PlaceholderColor="#707070"/>
+                <Entry Placeholder="Confrim Password" PlaceholderColor="#707070" x:Name="EntConfirmPassword" IsPassword="True" TextChanged="EntConfirmPassword_TextChanged"/>
+                <Button Text="Sign Up" BackgroundColor="#c62729" TextColor="white" x:Name="BtnSignUp" Clicked="BtnSignUp_Clicked"/>
+                <!--<DatePicker Date="2019/08/31" x:Name="DtmPicker" TextColor="#c62729" FontSize="Small" Margin="0,15,0,0"/>-->
+                <Label Text="" x:Name="lblConfrimPassword" HorizontalOptions="Center" FontSize="Small" Margin="0,15,0,0"/>
+            </StackLayout>
+            
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
